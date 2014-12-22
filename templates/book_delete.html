@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+{% autoescape None %}
+
+{% block body %}
+<h2>{{ header_text }}</h2>
+	{% for book in books %}
+ 	 	<form action="{{ delete_path }}" method="post">
+        {{ modules.Book(book) }}
+        <input type="hidden" name="isbn" value='{{ book["isbn"] }}'>
+        <input type="submit" value="delete">
+        </form>
+	{% end %}
+{% end %}

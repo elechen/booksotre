@@ -1,0 +1,15 @@
+{% extends "main.html" %}
+
+{% block header %}
+<h1>{{ header_text }}</h1>
+{% end %}
+
+{% block body %}
+<div id="hello">
+    <p>Welcome to Alice's Books!</p>
+    <div class="link">
+        <li class="link_one" align="left"> <a href="/recommended/">recommended reading</a> </li>
+        <li class="link_one" align="left"> <a href="/discussion/">discussion</a></li>
+    </div>
+</div>
+{% end %}
