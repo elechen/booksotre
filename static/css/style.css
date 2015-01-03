@@ -53,3 +53,19 @@ body {
 		color: #777;
 	}
 
+.input {
+	width: 300px;
+	height: 23px;
+}
+	.input .name {
+		width: 100px;
+		float: left;
+	}
+	.input .name label {
+		float: right;
+	}
+
+	.input .edit {
+		width: 200px;
+		float: right;
+	}
